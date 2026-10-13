@@ -70,7 +70,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun moManHinhChiTiet_117() {
-        val intent_117 = Intent(this, MainActivity::class.java)
+        val ten_117 = edtTenKhoanChi_117.text.toString().trim()
+        val soTienStr_117 = edtSoTien_117.text.toString().trim()
+        val ghiChu_117 = edtGhiChu_117.text.toString().trim()
+
+        val intent_117 = Intent(this, ChiTietChiTieuActivity::class.java).apply {
+            putExtra("EXTRA_TEN_117", ten_117)
+            putExtra("EXTRA_SO_TIEN_117", soTienStr_117)
+            putExtra("EXTRA_GHI_CHU_117", ghiChu_117)
+        }
         startActivity(intent_117)
     }
 }
