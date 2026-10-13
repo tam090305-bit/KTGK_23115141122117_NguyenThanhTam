@@ -40,4 +40,11 @@
         android:layout_height="wrap_content"
         android:text="Quay lại màn hình chính" />
 
+    <Button
+        android:id="@+id/btnChinhSua_117"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Chỉnh sửa khoản chi" />
+
 </LinearLayout>
